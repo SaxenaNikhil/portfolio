@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Saxena | Frontend Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/common/favicon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../assets/common/styles.css">
+    <link rel="stylesheet" href="css/theme-frontend.css">
+</head>
+<body class="theme-frontend">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home">
+                    <h1>NK.</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="../assets/common/resume.pdf" class="nav-link" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+            
+            <div id="theme-switch">
+                <span class="frontend-text">Frontend</span>
+                <span class="toggle-slider"></span>
+                <span class="cloud-text">Cloud</span>
+            </div>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay"></div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="../assets/common/resume.pdf" class="nav-link" target="_blank">Resume</a></li>
+        </ul>
+        <div class="mobile-theme-switch">
+            <div id="mobile-theme-switch">
+                <span class="frontend-text">Frontend</span>
+                <span class="toggle-slider"></span>
+                <span class="cloud-text">Cloud</span>
+            </div>
+        </div>
+        <div class="mobile-social-icons">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hi, my name is</p>
+                    <h1 class="name"><span class="highlight">Nikhil Saxena</span>.</h1>
+                    <h2 class="tagline">I build things for the web.</h2>
+                    <p class="description">I'm a <span class="profession">Frontend Developer</span> specializing in building exceptional digital experiences. Currently pursuing Full-Stack Software Development at Lambton College and focusing on building accessible, human-centered products.</p>
+                    <div class="buttons">
+                        <a href="#contact" class="btn primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                        <a href="../assets/common/resume.pdf" class="btn secondary" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
+                        <a href="#projects" class="btn secondary"><i class="fas fa-eye"></i> Check Out My Work</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-container fade-in">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm Nikhil, a Frontend Developer with 5 years of experience in building exceptional digital experiences. I specializing in creating responsive, user-friendly websites and applications that deliver outstanding user experiences.</p>
+                        
+                        <p>I previously worked at <a href="https://www.tothenew.com/" target="_blank">To The New</a>, where I collaborated with cross-functional teams to develop innovative web solutions. Currently, I'm pursuing Full-Stack Software Development at <a href="https://www.lambtoncollege.ca/" target="_blank">Lambton College</a> to expand my skill set and tackle new challenges.</p>
+                        
+                        <p>I thrive in collaborative environments and enjoy working with agile methodologies. My approach combines technical expertise with a keen eye for design, ensuring that the products I build are both functional and visually appealing.</p>
+                        
+                        <p>Here are some technologies I've been working with recently:</p>
+                    </div>
+                    
+                    <div class="tech-lists">
+                        <ul class="tech-list">
+                            <li><i class="fas fa-caret-right"></i> JavaScript (ES6+)</li>
+                            <li><i class="fas fa-caret-right"></i> React.js</li>
+                            <li><i class="fas fa-caret-right"></i> TypeScript</li>
+                            <li><i class="fas fa-caret-right"></i> HTML & CSS</li>
+                        </ul>
+                        <ul class="tech-list">
+                            <li><i class="fas fa-caret-right"></i> Vue.js</li>
+                            <li><i class="fas fa-caret-right"></i> Node.js</li>
+                            <li><i class="fas fa-caret-right"></i> SASS/SCSS</li>
+                            <li><i class="fas fa-caret-right"></i> Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="../assets/common/profile.jpg" alt="Nikhil Saxena" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Where I've Worked</h2>
+            
+            <div class="tabs-container fade-in">
+                <div class="tabs">
+                    <button class="tab-button active" data-target="job1">To The New</button>
+                    <button class="tab-button" data-target="job2">Freelance</button>
+                    <button class="tab-button" data-target="job3">ABC Tech</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="job1" class="job-content active">
+                        <h3>Senior Frontend Developer <span class="company-name">@ To The New</span></h3>
+                        <p class="job-period">June 2018 - July 2023</p>
+                        <ul class="job-responsibilities">
+                            <li><i class="fas fa-caret-right"></i> Led the development of responsive, mobile-first web applications using React.js and TypeScript.</li>
+                            <li><i class="fas fa-caret-right"></i> Collaborated with UX/UI designers to implement pixel-perfect interfaces that adhered to design specifications and brand guidelines.</li>
+                            <li><i class="fas fa-caret-right"></i> Optimized web applications for maximum speed and scalability, achieving a 40% improvement in load times and performance.</li>
+                            <li><i class="fas fa-caret-right"></i> Mentored junior developers, conducted code reviews, and implemented best practices and coding standards.</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="job2" class="job-content">
+                        <h3>Frontend Consultant <span class="company-name">@ Freelance</span></h3>
+                        <p class="job-period">January 2017 - May 2018</p>
+                        <ul class="job-responsibilities">
+                            <li><i class="fas fa-caret-right"></i> Designed and developed custom websites and applications for clients across various industries.</li>
+                            <li><i class="fas fa-caret-right"></i> Built responsive layouts using HTML5, CSS3, and JavaScript, ensuring cross-browser compatibility and accessibility.</li>
+                            <li><i class="fas fa-caret-right"></i> Integrated third-party APIs and services to enhance website functionality and user experience.</li>
+                            <li><i class="fas fa-caret-right"></i> Provided technical consulting and solutions tailored to client needs and business objectives.</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="job3" class="job-content">
+                        <h3>Junior Web Developer <span class="company-name">@ ABC Tech</span></h3>
+                        <p class="job-period">March 2016 - December 2016</p>
+                        <ul class="job-responsibilities">
+                            <li><i class="fas fa-caret-right"></i> Assisted in the development and maintenance of company websites and web applications.</li>
+                            <li><i class="fas fa-caret-right"></i> Created responsive email templates and marketing materials using HTML and CSS.</li>
+                            <li><i class="fas fa-caret-right"></i> Collaborated with the design team to implement visual elements and UI components.</li>
+                            <li><i class="fas fa-caret-right"></i> Participated in agile development processes, including daily stand-ups and sprint planning.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Some Things I've Built</h2>
+            
+            <div class="filter-buttons fade-in">
+                <button class="filter-btn active" data-filter="frontend_all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn disabled" data-filter="cloud">Cloud</button>
+            </div>
+            
+            <div class="featured-projects">
+                
+                <div class="featured-project fade-in" data-category="frontend">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">E-Commerce Dashboard</h3>
+                        <div class="project-description">
+                            <p>A comprehensive admin dashboard for e-commerce platforms built with React and Material UI. Features include real-time sales tracking, inventory management, and customer analytics. The responsive interface provides a seamless experience across all devices.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>Material UI</li>
+                            <li>Chart.js</li>
+                            <li>Redux</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <a href="#" target="_blank">
+                            <div class="image-wrapper">
+                                <img src="../assets/common/project1.jpg" alt="E-Commerce Dashboard" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <div class="featured-project fade-in" data-category="fullstack">
+                    <div class="project-content right">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">Task Management App</h3>
+                        <div class="project-description right">
+                            <p>A feature-rich task management application that helps users organize projects, set deadlines, and track progress. Built with a React frontend and Node.js backend, it supports user authentication, task categorization, and collaborative features.</p>
+                        </div>
+                        <ul class="project-tech-list right">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        <div class="project-links right">
+                            <a href="#" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-image left">
+                        <a href="#" target="_blank">
+                            <div class="image-wrapper">
+                                <img src="../assets/common/project2.jpg" alt="Task Management App" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="other-projects-title fade-in">Other Noteworthy Projects</h3>
+            
+            <div class="projects-grid fade-in">
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-card-inner">
+                        <div class="project-card-top">
+                            <div class="project-card-folder">
+                                <i class="far fa-folder"></i>
+                            </div>
+                            <div class="project-card-links">
+                                <a href="#" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-card-title">Weather Dashboard</h3>
+                        <div class="project-card-description">
+                            <p>A weather dashboard that provides current conditions and forecasts for any location. Features responsive design and dynamic charts for temperature and precipitation trends.</p>
+                        </div>
+                        <div class="project-card-tech">
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>Weather API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-card-inner">
+                        <div class="project-card-top">
+                            <div class="project-card-folder">
+                                <i class="far fa-folder"></i>
+                            </div>
+                            <div class="project-card-links">
+                                <a href="#" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-card-title">Portfolio Generator</h3>
+                        <div class="project-card-description">
+                            <p>A tool that allows users to generate personalized portfolio websites by inputting their projects, skills, and experience. Includes customizable templates and export options.</p>
+                        </div>
+                        <div class="project-card-tech">
+                            <span>React</span>
+                            <span>Styled Components</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-card-inner">
+                        <div class="project-card-top">
+                            <div class="project-card-folder">
+                                <i class="far fa-folder"></i>
+                            </div>
+                            <div class="project-card-links">
+                                <a href="#" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-card-title">Recipe Finder</h3>
+                        <div class="project-card-description">
+                            <p>A web application that helps users find recipes based on ingredients they have on hand. Features user accounts, saved favorites, and nutritional information for recipes.</p>
+                        </div>
+                        <div class="project-card-tech">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-card-inner">
+                        <div class="project-card-top">
+                            <div class="project-card-folder">
+                                <i class="far fa-folder"></i>
+                            </div>
+                            <div class="project-card-links">
+                                <a href="#" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-card-title">Movie Recommendation Engine</h3>
+                        <div class="project-card-description">
+                            <p>A movie recommendation system that suggests films based on user preferences and viewing history. Includes filters for genres, release years, and user ratings.</p>
+                        </div>
+                        <div class="project-card-tech">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>TMDb API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-card-inner">
+                        <div class="project-card-top">
+                            <div class="project-card-folder">
+                                <i class="far fa-folder"></i>
+                            </div>
+                            <div class="project-card-links">
+                                <a href="#" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-card-title">Budget Tracker</h3>
+                        <div class="project-card-description">
+                            <p>A personal finance application that helps users track income, expenses, and savings goals. Features include budgeting categories, financial reports, and data visualization.</p>
+                        </div>
+                        <div class="project-card-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-card-inner">
+                        <div class="project-card-top">
+                            <div class="project-card-folder">
+                                <i class="far fa-folder"></i>
+                            </div>
+                            <div class="project-card-links">
+                                <a href="#" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-card-title">Fitness Tracker</h3>
+                        <div class="project-card-description">
+                            <p>A web application for tracking workouts, progress, and fitness goals. Includes exercise library, workout plans, and progress charts to visualize improvements over time.</p>
+                        </div>
+                        <div class="project-card-tech">
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="show-more fade-in">
+                <a href="https://github.com/yourusername" target="_blank" class="btn secondary">See More on GitHub <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs">
+        <div class="container">
+            <h2 class="section-title fade-in">Latest from My Blog</h2>
+            
+            <div class="blog-slider-container fade-in">
+                <div class="blog-slider">
+
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog1.jpg" alt="Blog Post 1">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">Aug 19, 2023</div>
+                            <h3 class="blog-title">PART 1 - Web Accessibility: Ensuring Equal Online Experiences for All</h3>
+                            <p class="blog-excerpt">Web accessibility ensures inclusive digital experiences for all. Following WCAG standards improves usability, engagement, and reach, making the web accessible, user-friendly, and equal for everyone 🚀</p>
+                            <a target="_blank" href="https://www.tothenew.com/blog/part-1-web-accessibility-ensuring-equal-online-experiences-for-all/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog2.jpg" alt="Blog Post 2">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">August 20, 2023</div>
+                            <h3 class="blog-title">Part 2 - Web Accessibility: Your guide to comprehensive website testing</h3>
+                            <p class="blog-excerpt">Master web accessibility testing with automated tools like Axe, WAVE, and Lighthouse, and essential manual checks for navigation, screen readers, color contrast, and usability. Enhance inclusivity! 🚀</p>
+                            <a target="_blank" href="https://www.tothenew.com/blog/part-2-web-accessibility-your-guide-to-comprehensive-website-testing/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog3.jpg" alt="Blog Post 3">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">August 21, 2023</div>
+                            <h3 class="blog-title">Part 3 - Web Accessibility: Practical Approaches to Implement accessibility using Axe tool</h3>
+                            <p class="blog-excerpt">Learn how to implement ARIA accessibility using the Axe tool in VS Code. Detect and fix errors like missing alt text for a more inclusive web experience! 🚀</p>
+                            <a target="_blank" href="https://www.tothenew.com/blog/part-3-web-accessibility-practical-approaches-to-implement-accessibility-using-axe-tool/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog3.jpg" alt="Blog Post 4">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">August 22, 2023</div>
+                            <h3 class="blog-title">Part 4 - Web Accessibility: NVDA Screen Reader for effective debugging</h3>
+                            <p class="blog-excerpt">Enhance web accessibility with the NVDA Screen Reader! Learn how to fix list navigation and button focus issues for better keyboard and screen reader compatibility. 🚀</p>
+                            <a target="_blank" href="https://www.tothenew.com/blog/part-4-web-accessibility-nvda-screen-reader-for-effective-debugging/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog3.jpg" alt="Blog Post 5">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">August 23, 2023</div>
+                            <h3 class="blog-title">Part 5 - Web Accessibility: Fixing Checkbox to announce the “checked” / “unchecked” state while using screen reader</h3>
+                            <p class="blog-excerpt">Learn to implement checkbox accessibility by announcing the "checked" and "unchecked" states with NVDA screen reader, ensuring clear interaction via keyboard and mouse 🚀</p>
+                            <a target="_blank" href="https://www.tothenew.com/blog/part-5-web-accessibility-fixing-checkbox-to-announce-the-checked-unchecked-state-while-using-screen-reader/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog3.jpg" alt="Blog Post 6">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">August 24, 2023</div>
+                            <h3 class="blog-title">Part 6 - Web Accessibility: Focusing on Visual Representation of navigation links</h3>
+                            <p class="blog-excerpt">Ensure clear navigation link visibility with custom focus styles for keyboard users. Learn how to enhance focus representation and create accessible, stylish navigation menus. 🚀</p>
+                            <a target="_blank" href="https://www.tothenew.com/blog/part-6-web-accessibility-focusing-on-visual-representation-of-navigation-links/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog1.jpg" alt="Blog Post 1">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">June 15, 2023</div>
+                            <h3 class="blog-title">Creating Responsive Layouts with CSS Grid</h3>
+                            <p class="blog-excerpt">Learn how to use CSS Grid to create complex, responsive layouts with minimal code. This guide covers the fundamentals and advanced techniques.</p>
+                            <a href="../blogs/css-grid.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog2.jpg" alt="Blog Post 2">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">May 22, 2023</div>
+                            <h3 class="blog-title">Understanding JavaScript Promises</h3>
+                            <p class="blog-excerpt">A deep dive into JavaScript Promises, async/await, and how to manage asynchronous operations in modern web applications.</p>
+                            <a href="../blogs/js-promises.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog3.jpg" alt="Blog Post 3">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">April 10, 2023</div>
+                            <h3 class="blog-title">Web Performance Optimization Techniques</h3>
+                            <p class="blog-excerpt">Practical strategies to improve your website's loading speed, optimize assets, and enhance user experience through performance tuning.</p>
+                            <a href="../blogs/web-performance.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="blog-post">
+                        <div class="blog-image">
+                            <img src="../assets/common/blog4.jpg" alt="Blog Post 4">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">March 5, 2023</div>
+                            <h3 class="blog-title">Getting Started with React Hooks</h3>
+                            <p class="blog-excerpt">An introduction to React Hooks and how they simplify state management and side effects in functional components.</p>
+                            <a href="../blogs/react-hooks.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+                
+                <div class="blog-slider-controls">
+                    <button class="blog-slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="blog-slider-dots"></div>
+                    <button class="blog-slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <!-- <div class="blog-all-link fade-in">
+                <a href="../blogs/index.html" class="btn secondary">View All Posts <i class="fas fa-arrow-right"></i></a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">What's Next?</h2>
+            <h3 class="contact-title fade-in">Get In Touch</h3>
+            <div class="contact-content fade-in">
+                <p>I'm currently looking for new opportunities. Whether you have a question, a project in mind, or just want to say hi, I'll try my best to get back to you!</p>
+                <a href="mailto:youremail@example.com" class="btn primary">Say Hello</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>Designed & Built by Nikhil Saxena</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/common/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

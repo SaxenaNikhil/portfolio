@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Saxena | Blog</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/common/favicon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../assets/common/styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+</head>
+<body class="blog-page">
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../frontend/index.html">
+                    <h1>NK.</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../frontend/index.html#about" class="nav-link">About</a></li>
+                    <li><a href="../frontend/index.html#experience" class="nav-link">Experience</a></li>
+                    <li><a href="../frontend/index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="../frontend/index.html#blogs" class="nav-link active">Blog</a></li>
+                    <li><a href="../frontend/index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="theme-selector">
+                <a href="?theme=frontend" class="theme-link active">Frontend</a>
+                <span class="theme-divider">|</span>
+                <a href="?theme=cloud" class="theme-link">Cloud</a>
+            </div>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay"></div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="../frontend/index.html#about" class="nav-link">About</a></li>
+            <li><a href="../frontend/index.html#experience" class="nav-link">Experience</a></li>
+            <li><a href="../frontend/index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="../frontend/index.html#blogs" class="nav-link">Blog</a></li>
+            <li><a href="../frontend/index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-theme-selector">
+            <a href="?theme=frontend" class="theme-link active">Frontend</a>
+            <span class="theme-divider">|</span>
+            <a href="?theme=cloud" class="theme-link">Cloud</a>
+        </div>
+        <div class="mobile-social-icons">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1 class="blog-main-title fade-in">My Blog</h1>
+            <p class="blog-subtitle fade-in">Thoughts, learnings, and insights from my journey in development</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts-section">
+        <div class="container">
+            <div class="blog-posts-grid fade-in">
+                <!-- Blog Post 1 -->
+                <div class="blog-grid-item">
+                    <div class="blog-grid-image">
+                        <img src="../assets/common/blog1.jpg" alt="Blog Post 1">
+                    </div>
+                    <div class="blog-grid-content">
+                        <div class="blog-grid-date">June 15, 2023</div>
+                        <h2 class="blog-grid-title">Creating Responsive Layouts with CSS Grid</h2>
+                        <p class="blog-grid-excerpt">Learn how to use CSS Grid to create complex, responsive layouts with minimal code. This guide covers the fundamentals and advanced techniques.</p>
+                        <a href="css-grid.html" class="blog-grid-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="blog-grid-item">
+                    <div class="blog-grid-image">
+                        <img src="../assets/common/blog2.jpg" alt="Blog Post 2">
+                    </div>
+                    <div class="blog-grid-content">
+                        <div class="blog-grid-date">May 22, 2023</div>
+                        <h2 class="blog-grid-title">Understanding JavaScript Promises</h2>
+                        <p class="blog-grid-excerpt">A deep dive into JavaScript Promises, async/await, and how to manage asynchronous operations in modern web applications.</p>
+                        <a href="js-promises.html" class="blog-grid-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="blog-grid-item">
+                    <div class="blog-grid-image">
+                        <img src="../assets/common/blog3.jpg" alt="Blog Post 3">
+                    </div>
+                    <div class="blog-grid-content">
+                        <div class="blog-grid-date">April 10, 2023</div>
+                        <h2 class="blog-grid-title">Web Performance Optimization Techniques</h2>
+                        <p class="blog-grid-excerpt">Practical strategies to improve your website's loading speed, optimize assets, and enhance user experience through performance tuning.</p>
+                        <a href="web-performance.html" class="blog-grid-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 4 -->
+                <div class="blog-grid-item">
+                    <div class="blog-grid-image">
+                        <img src="../assets/common/blog4.jpg" alt="Blog Post 4">
+                    </div>
+                    <div class="blog-grid-content">
+                        <div class="blog-grid-date">March 5, 2023</div>
+                        <h2 class="blog-grid-title">Getting Started with React Hooks</h2>
+                        <p class="blog-grid-excerpt">An introduction to React Hooks and how they simplify state management and side effects in functional components.</p>
+                        <a href="react-hooks.html" class="blog-grid-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 5 -->
+                <div class="blog-grid-item">
+                    <div class="blog-grid-image">
+                        <img src="../assets/common/blog5.jpg" alt="Blog Post 5">
+                    </div>
+                    <div class="blog-grid-content">
+                        <div class="blog-grid-date">February 18, 2023</div>
+                        <h2 class="blog-grid-title">CSS Animation Best Practices</h2>
+                        <p class="blog-grid-excerpt">Learn how to create smooth, performant animations using CSS transitions, keyframes, and the animation API.</p>
+                        <a href="css-animations.html" class="blog-grid-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 6 -->
+                <div class="blog-grid-item">
+                    <div class="blog-grid-image">
+                        <img src="../assets/common/blog6.jpg" alt="Blog Post 6">
+                    </div>
+                    <div class="blog-grid-content">
+                        <div class="blog-grid-date">January 30, 2023</div>
+                        <h2 class="blog-grid-title">Building Accessible Web Forms</h2>
+                        <p class="blog-grid-excerpt">A comprehensive guide to creating web forms that are accessible to everyone, including users with disabilities.</p>
+                        <a href="accessible-forms.html" class="blog-grid-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>Designed & Built by Nikhil Saxena</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/common/common.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html> 

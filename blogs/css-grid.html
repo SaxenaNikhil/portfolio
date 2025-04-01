@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Responsive Layouts with CSS Grid | Nikhil Saxena's Blog</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/common/favicon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../assets/common/styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+</head>
+<body class="blog-post-page">
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../frontend/index.html">
+                    <h1>NK.</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../frontend/index.html#about" class="nav-link">About</a></li>
+                    <li><a href="../frontend/index.html#experience" class="nav-link">Experience</a></li>
+                    <li><a href="../frontend/index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="../frontend/index.html#blogs" class="nav-link active">Blog</a></li>
+                    <li><a href="../frontend/index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="theme-selector">
+                <a href="?theme=frontend" class="theme-link active">Frontend</a>
+                <span class="theme-divider">|</span>
+                <a href="?theme=cloud" class="theme-link">Cloud</a>
+            </div>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay"></div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="../frontend/index.html#about" class="nav-link">About</a></li>
+            <li><a href="../frontend/index.html#experience" class="nav-link">Experience</a></li>
+            <li><a href="../frontend/index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="../frontend/index.html#blogs" class="nav-link">Blog</a></li>
+            <li><a href="../frontend/index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-theme-selector">
+            <a href="?theme=frontend" class="theme-link active">Frontend</a>
+            <span class="theme-divider">|</span>
+            <a href="?theme=cloud" class="theme-link">Cloud</a>
+        </div>
+        <div class="mobile-social-icons">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- Blog Post Header -->
+    <section class="blog-post-header">
+        <div class="container">
+            <div class="blog-post-meta fade-in">
+                <a href="index.html" class="blog-back-link"><i class="fas fa-arrow-left"></i> Back to All Posts</a>
+                <span class="blog-post-date">June 15, 2023</span>
+                <span class="blog-post-category">CSS</span>
+            </div>
+            <h1 class="blog-post-title fade-in">Creating Responsive Layouts with CSS Grid</h1>
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section class="blog-post-content">
+        <div class="container">
+            <div class="blog-post-container fade-in">
+                <!-- Featured Image -->
+                <div class="blog-post-image">
+                    <img src="../assets/common/blog1.jpg" alt="CSS Grid Layout">
+                </div>
+                
+                <!-- Article Content -->
+                <article class="blog-post-article">
+                    <p class="blog-post-intro">CSS Grid Layout is a powerful tool that has revolutionized how we design web layouts. With its two-dimensional system, creating complex, responsive layouts has never been easier. In this article, I'll guide you through the fundamentals and share some advanced techniques to help you master CSS Grid.</p>
+                    
+                    <h2>Understanding CSS Grid Fundamentals</h2>
+                    
+                    <p>Before diving into complex layouts, let's understand the basic building blocks of CSS Grid:</p>
+                    
+                    <h3>Grid Container and Grid Items</h3>
+                    
+                    <p>To create a grid, you need to define a container with <code>display: grid</code>. All direct children of this container become grid items automatically.</p>
+                    
+                    <pre><code class="language-css">.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* All direct children become grid items */
+.grid-container > div {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+</code></pre>
+                    
+                    <h3>Defining Grid Columns and Rows</h3>
+                    
+                    <p>Use <code>grid-template-columns</code> and <code>grid-template-rows</code> to define the size of columns and rows in your grid:</p>
+                    
+                    <pre><code class="language-css">/* Three columns: first is 200px, second takes 2fr of remaining space, third takes 1fr */
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr;
+  grid-template-rows: auto 300px auto;
+  gap: 20px;
+}
+</code></pre>
+                    
+                    <h2>Creating Responsive Layouts</h2>
+                    
+                    <p>The real power of CSS Grid shines when creating responsive layouts. Here are some techniques to ensure your grid adapts to different screen sizes:</p>
+                    
+                    <h3>Using minmax() Function</h3>
+                    
+                    <p>The <code>minmax()</code> function allows you to specify a minimum and maximum size for a grid track:</p>
+                    
+                    <pre><code class="language-css">.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+</code></pre>
+                    
+                    <p>This creates a grid with columns that are at least 250px wide, but can expand to fill available space. The number of columns adjusts automatically based on the container width.</p>
+                    
+                    <h3>Using auto-fill and auto-fit</h3>
+                    
+                    <p><code>auto-fill</code> and <code>auto-fit</code> allow for dynamic addition or removal of columns based on available space:</p>
+                    
+                    <pre><code class="language-css">/* auto-fill: creates as many columns as can fit */
+.auto-fill-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* auto-fit: similar to auto-fill but collapses empty tracks */
+.auto-fit-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+</code></pre>
+                    
+                    <h2>Advanced Grid Techniques</h2>
+                    
+                    <h3>Grid Areas for Complex Layouts</h3>
+                    
+                    <p>Grid areas provide a visual way to define layouts, making complex designs more intuitive:</p>
+                    
+                    <pre><code class="language-css">.dashboard {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "sidebar footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+</code></pre>
+                    
+                    <h3>Alignment Control</h3>
+                    
+                    <p>CSS Grid provides powerful alignment capabilities for both the grid container and individual items:</p>
+                    
+                    <pre><code class="language-css">.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* Align all grid items */
+  justify-items: center; /* Horizontal alignment */
+  align-items: center;   /* Vertical alignment */
+}
+
+.grid-item {
+  /* Override alignment for specific items */
+  justify-self: end;
+  align-self: start;
+}
+</code></pre>
+                    
+                    <h2>Practical Example: Photo Gallery</h2>
+                    
+                    <p>Let's put everything together to create a responsive photo gallery:</p>
+                    
+                    <pre><code class="language-css">.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Feature specific images by making them span multiple cells */
+.featured {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .featured {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+</code></pre>
+                    
+                    <h2>Browser Support and Fallbacks</h2>
+                    
+                    <p>CSS Grid is well-supported in modern browsers, but for older browsers, consider providing fallbacks:</p>
+                    
+                    <pre><code class="language-css">/* Fallback for browsers that don't support Grid */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 10px;
+}
+
+/* Then override with Grid for supporting browsers */
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    margin: 0;
+  }
+}
+</code></pre>
+                    
+                    <h2>Conclusion</h2>
+                    
+                    <p>CSS Grid has transformed how we approach web layouts, offering a level of control and flexibility that was previously difficult to achieve. By mastering grid fundamentals and embracing its responsive capabilities, you can create sophisticated layouts with cleaner, more maintainable code.</p>
+                    
+                    <p>Remember that CSS Grid works best when combined with other layout techniques like Flexbox. Grid is ideal for two-dimensional layouts (rows and columns together), while Flexbox excels at one-dimensional layouts (either rows or columns).</p>
+                    
+                    <p>Experiment with the techniques covered in this article, and you'll soon find yourself building complex, responsive layouts with ease.</p>
+                </article>
+                
+                <!-- Author Info -->
+                <div class="blog-post-author">
+                    <div class="author-image">
+                        <img src="../assets/common/profile.jpg" alt="Nikhil Saxena">
+                    </div>
+                    <div class="author-info">
+                        <h3>Written by Nikhil Saxena</h3>
+                        <p>Frontend Developer specializing in creating exceptional user experiences. Passionate about web technologies and sharing knowledge with the developer community.</p>
+                        <div class="author-social">
+                            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Posts -->
+                <div class="related-posts">
+                    <h3>Related Posts</h3>
+                    <div class="related-posts-grid">
+                        <a href="css-animations.html" class="related-post">
+                            <div class="related-post-image">
+                                <img src="../assets/common/blog5.jpg" alt="CSS Animation Best Practices">
+                            </div>
+                            <div class="related-post-content">
+                                <h4>CSS Animation Best Practices</h4>
+                                <span class="related-post-date">February 18, 2023</span>
+                            </div>
+                        </a>
+                        <a href="web-performance.html" class="related-post">
+                            <div class="related-post-image">
+                                <img src="../assets/common/blog3.jpg" alt="Web Performance Optimization Techniques">
+                            </div>
+                            <div class="related-post-content">
+                                <h4>Web Performance Optimization Techniques</h4>
+                                <span class="related-post-date">April 10, 2023</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="blog-cta">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Want to see more content like this?</h2>
+                <p>Subscribe to my newsletter to receive updates on new articles, tips, and resources.</p>
+                <form class="cta-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>Designed & Built by Nikhil Saxena</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/common/common.js"></script>
+    <script src="blog.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html> 
