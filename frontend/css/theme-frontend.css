@@ -572,7 +572,7 @@ header.scrolled {
     transition: all 0.25s var(--transition);
 }
 
-.image-wrapper:after {
+/* .image-wrapper:after {
     content: '';
     display: block;
     position: absolute;
@@ -585,17 +585,17 @@ header.scrolled {
     z-index: -1;
     transition: all 0.25s var(--transition);
     transform: translate(10px, 10px);
-}
+} */
 
-.image-wrapper:hover:after {
+/* .image-wrapper:hover:after {
     transform: translate(5px, 5px);
-}
+} */
 
 .profile-image {
     width: 100%;
     height: auto;
     object-fit: cover;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     mix-blend-mode: multiply;
     border-radius: 5px;
     transition: all 0.25s var(--transition);
